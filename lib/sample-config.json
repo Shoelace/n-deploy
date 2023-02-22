@@ -1,0 +1,20 @@
+{
+  "config-version": "release",
+  "config-data": {
+    "targets": [
+      {
+        "user": "userA",
+        "host": "example.com",
+        "destination": "folder_A",
+        "source": "/my/local/path/to/folderA"
+      },
+      {
+        "jump": "userA@hostc",
+        "user": "userB",
+        "host": "example.org",
+        "destination": "folder_B",
+        "source": "/my/local/path/to/folderB"
+      }
+    ]
+  }
+}

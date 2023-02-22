@@ -1,0 +1,29 @@
+{
+  "name": "n-deploy",
+  "version": "1.0.1",
+  "description": "This tool allows you to scp -r /path/to/local/folder user@host.com:/path/to/destination onto multiple targets.",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shoelace/n-deploy.git"
+  },
+  "contributors": ["Alexis Charytonow","David Pyke"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shoelace/n-deploy/issues"
+  },
+  "bin": {
+    "n-deploy": "bin/n-deploy.mjs"
+  },
+  "homepage": "https://github.com/Shoelace/n-deploy#readme",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}
