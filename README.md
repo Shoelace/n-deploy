@@ -5,7 +5,7 @@ This tool allows you to scp -r /path/to/local/folder user@host.com:/path/to/dest
 ### Installation
 
 ```bash
-npm install -g n-deploy
+npm install n-deploy
 ```
 
 ### Usage / Config 
