@@ -1,19 +1,27 @@
-#n-deploy
+# n-deploy
 
-This tool allows you to scp -r /path/to/local/folder user@host.com:/path/to/destination onto multiple targets.   
+This tool allows you to effectivly "`scp -r /path/to/local/folder user@host.com:/path/to/destination`" onto multiple targets with a single command.   
 
-### Installation
+you can also specify a "jump" host 
+
+it calls your system `scp` command, so scp must be in your path
+NB: passwordless authentication using keys is recommended
+
+## Installation
 
 ```bash
 npm install n-deploy
 ```
 
-### Usage / Config 
+## Usage 
+### Config 
 
 ```bash
 n-deploy --sample
-[+] Starting n-deploy v1
+[+] Starting n-deploy v1.1
 [+] Printing sample config ... copy & paste into n-deploy.json
+```
+```json
 {
   "config-version": "release",
   "config-data": {
@@ -34,20 +42,22 @@ n-deploy --sample
     ]
   }
 }
-
-# Modify and put this JSON inside n-deploy.json file and place this into your project's root folder.  
-
 ```
 
-### Usage / Deploy
+Modify and put this JSON inside n-deploy.json file and place this into your project's root folder.  
 
-```bash
+
+### Deploy
+
+```
 n-deploy --run
-[+] Starting n-deploy v1
+[+] Starting n-deploy v1.1
 [+] Configuration has been read.
 [+] Validating deploy targets.
 [+] Deploy for target <userA@example.com> started.
 [+] Deploy for target <userB@example.org> started.
+```
+```json
 {
         "user": "userA",
         "host": "example.com",
@@ -67,8 +77,8 @@ n-deploy --run
 
 ```
 
-### License MIT
+## License MIT
 
-### Author
-Alexis Charytonow, @lintuxt, 2015-2017.
-David Pyke , 2023
+## Author / Contributors 
+* Alexis Charytonow, @lintuxt, 2015-2017.
+* David Pyke , 2023

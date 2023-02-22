@@ -3,7 +3,7 @@
   "version": "1.1",
   "description": "This tool allows you to scp -r /path/to/local/folder user@host.com:/path/to/destination onto multiple targets.",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "mocha"
   },
@@ -11,7 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/Shoelace/n-deploy.git"
   },
-  "contributors": ["Alexis Charytonow","David Pyke"],
+  "contributors": [
+    "Alexis Charytonow",
+    "David Pyke <Shoelace@users.noreply.github.com> (https://github.com/Shoelace)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Shoelace/n-deploy/issues"
